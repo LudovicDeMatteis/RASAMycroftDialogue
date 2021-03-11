@@ -1,0 +1,5 @@
+<launch>
+
+ <node name="voice_recognition" pkg="speech_perception" type="voice_recognition_node.py" respawn="false" output="screen"/>
+
+</launch>

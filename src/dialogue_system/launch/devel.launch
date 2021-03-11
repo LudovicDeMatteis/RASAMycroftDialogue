@@ -1,0 +1,8 @@
+<launch>
+
+  <param name="action_server_url" type="str" value="http://localhost:5555/webhook"/>
+  <param name="action_server_port" type="int" value="5555"/>
+
+  <node name="dialogue_system" pkg="dialogue_system" type="dialogue_system.py" respawn="false" output="screen"/>
+  <node name="dialogue_action_server" pkg="dialogue_system" type="dialogue_action_server.py" respawn="false" output="screen"/>
+</launch>

@@ -1,0 +1,143 @@
+{
+  "max_histories": [
+    3, 
+    5, 
+    null
+  ], 
+  "python": "2.7.15", 
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble", 
+  "rasa_core": "0.11.1", 
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy", 
+    "rasa_core.policies.keras_policy.KerasPolicy", 
+    "rasa_core.policies.fallback.FallbackPolicy"
+  ], 
+  "action_fingerprints": {
+    "utter_state_favourite_city": {
+      "slots": []
+    }, 
+    "utter_goodbye": {
+      "slots": []
+    }, 
+    "action_look_right": {
+      "slots": []
+    }, 
+    "utter_state_prophesise_capability": {
+      "slots": []
+    }, 
+    "action_dance": {
+      "slots": []
+    }, 
+    "utter_state_prefer_cat_or_dog": {
+      "slots": []
+    }, 
+    "action_twist_right": {
+      "slots": []
+    }, 
+    "utter_respond_to_user_state_bad": {
+      "slots": []
+    }, 
+    "action_look_up": {
+      "slots": []
+    }, 
+    "utter_state_dreaming_capability": {
+      "slots": []
+    }, 
+    "action_listen": {
+      "slots": []
+    }, 
+    "action_be_silent": {
+      "slots": []
+    }, 
+    "utter_state_cooking_capability": {
+      "slots": []
+    }, 
+    "action_tell_a_story": {
+      "slots": []
+    }, 
+    "utter_hello": {
+      "slots": []
+    }, 
+    "utter_state_games": {
+      "slots": []
+    }, 
+    "utter_state_prefer_dem_or_repub": {
+      "slots": []
+    }, 
+    "utter_respond_to_insult": {
+      "slots": []
+    }, 
+    "action_post_arrived": {
+      "slots": []
+    }, 
+    "utter_state_favourite_movie": {
+      "slots": []
+    }, 
+    "utter_respond_to_compliment": {
+      "slots": []
+    }, 
+    "utter_state_favourite_sportsteam": {
+      "slots": []
+    }, 
+    "utter_state_favourite_country": {
+      "slots": []
+    }, 
+    "utter_respond_to_user_state_good": {
+      "slots": []
+    }, 
+    "utter_state_favourite_candy": {
+      "slots": []
+    }, 
+    "utter_state_favourite_author": {
+      "slots": []
+    }, 
+    "utter_state_favourite_actor": {
+      "slots": []
+    }, 
+    "utter_state_favourite_food": {
+      "slots": []
+    }, 
+    "action_weather": {
+      "slots": []
+    }, 
+    "utter_state_walking_capability": {
+      "slots": []
+    }, 
+    "action_call_teleoperator": {
+      "slots": []
+    }, 
+    "action_menu": {
+      "slots": []
+    }, 
+    "utter_state_favourite_book": {
+      "slots": []
+    }, 
+    "utter_state_favourite_animal": {
+      "slots": []
+    }, 
+    "action_play_music": {
+      "slots": []
+    }, 
+    "utter_ask_how_are_you": {
+      "slots": []
+    }, 
+    "utter_state_origin": {
+      "slots": []
+    }, 
+    "utter_state_favourite_holiday": {
+      "slots": []
+    }, 
+    "utter_state_sustenance": {
+      "slots": []
+    }, 
+    "utter_state_alive": {
+      "slots": []
+    }, 
+    "utter_state_attitude_knollwood": {
+      "slots": []
+    }, 
+    "utter_state_prefer_earlybird_nightowl": {
+      "slots": []
+    }
+  }
+}

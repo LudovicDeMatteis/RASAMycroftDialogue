@@ -1,0 +1,11 @@
+<launch>
+  <param name="intents_data" type="str" value="$(find dialogue_system)/intents/"/>
+  <param name="nlu_config" type="str" value="$(find dialogue_system)/res/nlu_config.yml"/>
+  <param name="nlu_output" type="str" value="$(find dialogue_system)/res/models/"/>
+  <param name="domain_file" type="str" value="$(find dialogue_system)/res/domain.yml"/>
+  <param name="stories" type="str" value="$(find dialogue_system)/stories"/>
+  <param name="dialogue_output" type="str" value="$(find dialogue_system)/res/models/default/dialogue"/>
+
+
+  <node name="train_dialogue_system" pkg="dialogue_system" type="train_dialogue_system.py" respawn="false" output="screen"/>
+</launch>

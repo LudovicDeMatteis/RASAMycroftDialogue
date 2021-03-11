@@ -1,0 +1,585 @@
+actions:
+- utter_hello
+- utter_goodbye
+- utter_nice_to_meet_response
+- utter_thanks
+- utter_ask_how_are_you
+- utter_respond_to_compliment
+- utter_respond_to_insult
+- utter_respond_to_user_state_good
+- utter_respond_to_user_state_bad
+- utter_state_introduction
+- utter_state_age
+- utter_state_birthday
+- utter_state_boss
+- utter_state_hobby
+- utter_state_occupation
+- utter_state_origin
+- utter_state_residence
+- utter_state_sustenance
+- utter_state_tiredeness
+- utter_state_alive
+- utter_state_capability
+- utter_state_games
+- utter_state_travel_capability
+- utter_state_cooking_capability
+- utter_state_bedmaking_capability
+- utter_state_walking_capability
+- utter_state_dreaming_capability
+- utter_state_manipulate_capability
+- utter_state_prophesise_capability
+- utter_state_hungry
+- utter_state_robot_state
+- action_battery
+- utter_state_tired
+- utter_state_attitude_music
+- utter_state_attitude_knollwood
+- utter_state_attitude_animals
+- utter_state_attitude_sports
+- utter_state_attitude_movies
+- utter_state_prefer_cat_or_dog
+- utter_state_prefer_earlybird_nightowl
+- utter_state_prefer_dem_or_repub
+- utter_state_favourite_sport
+- utter_state_favourite_sportsperson
+- utter_state_favourite_sportsteam
+- utter_state_favourite_movie
+- utter_state_favourite_book
+- utter_state_favourite_musician
+- utter_state_favourite_author
+- utter_state_favourite_actor
+- utter_state_favourite_animal
+- utter_state_favourite_food
+- utter_state_favourite_place
+- utter_state_favourite_country
+- utter_state_favourite_city
+- utter_state_favourite_drink
+- utter_state_favourite_candy
+- utter_state_favourite_robot
+- utter_state_favourite_season
+- utter_state_favourite_holiday
+- action_weather
+- action_activities
+- utter_joke
+- action_time
+- action_date
+- action_menu
+- action_post_arrived
+- action_cancel
+- action_twist_left
+- action_twist_right
+- action_look_left
+- action_look_right
+- action_look_down
+- action_look_up
+- action_both_arms_up
+- action_both_arms_down
+- action_zero_position
+- action_dance
+- action_wave
+- action_be_silent
+- action_play_music
+- action_tell_a_story
+- action_call_teleoperator
+- action_call_staff
+- action_call_acquietance
+- action_fallback
+config:
+  store_entities_as_slots: true
+entities:
+- user_name
+- day
+- repeat_phrase
+- timer_time
+- pick_a_num_low
+- pick_a_num_high
+- maths_first_operand
+- maths_operation
+- maths_second_operand
+intents:
+- elicit_favourite_sport:
+    use_entities: true
+- user_busy:
+    use_entities: true
+- elicit_occupation:
+    use_entities: true
+- elicit_hungry:
+    use_entities: true
+- elicit_bedmaking_capability:
+    use_entities: true
+- elicit_how_are_you:
+    use_entities: true
+- command_wave:
+    use_entities: true
+- retrieve_time:
+    use_entities: true
+- command_call_staff:
+    use_entities: true
+- command_be_happy:
+    use_entities: true
+- nice_to_meet:
+    use_entities: true
+- user_excited:
+    use_entities: true
+- elicit_attitude_sports:
+    use_entities: true
+- command_tell_a_story:
+    use_entities: true
+- user_no:
+    use_entities: true
+- command_set_a_timer:
+    use_entities: true
+- elicit_battery:
+    use_entities: true
+- elicit_introduction:
+    use_entities: true
+- user_here:
+    use_entities: true
+- elicit_attitude_knollwood:
+    use_entities: true
+- remark_smart:
+    use_entities: true
+- elicit_favourite_robot:
+    use_entities: true
+- command_look_up:
+    use_entities: true
+- command_dance:
+    use_entities: true
+- elicit_travel_capability:
+    use_entities: true
+- command_volume_up:
+    use_entities: true
+- elicit_birthday:
+    use_entities: true
+- elicit_favourite_animal:
+    use_entities: true
+- user_lonely:
+    use_entities: true
+- elicit_boss:
+    use_entities: true
+- command_pick_a_number:
+    use_entities: true
+- command_flip_a_coin:
+    use_entities: true
+- sorry:
+    use_entities: true
+- wait:
+    use_entities: true
+- remark_boring:
+    use_entities: true
+- goodmorning:
+    use_entities: true
+- remark_annoying:
+    use_entities: true
+- well_done:
+    use_entities: true
+- good:
+    use_entities: true
+- elicit_dreaming_capability:
+    use_entities: true
+- elicit_hobby:
+    use_entities: true
+- command_call_acquietance:
+    use_entities: true
+- elicit_favourite_country:
+    use_entities: true
+- cancel:
+    use_entities: true
+- elicit_residence:
+    use_entities: true
+- elicit_age:
+    use_entities: true
+- command_both_arms_down:
+    use_entities: true
+- whatsup:
+    use_entities: true
+- command_stop_game:
+    use_entities: true
+- command_follow_me_stop:
+    use_entities: true
+- command_tell_a_riddle:
+    use_entities: true
+- remark_crazy:
+    use_entities: true
+- elicit_favourite_movie:
+    use_entities: true
+- elicit_manipulate_capability:
+    use_entities: true
+- nice_to_see:
+    use_entities: true
+- elicit_prophesise_capability:
+    use_entities: true
+- remark_good:
+    use_entities: true
+- command_do_a_spin:
+    use_entities: true
+- command_twist_left:
+    use_entities: true
+- elicit_favourite_city:
+    use_entities: true
+- command_follow_me_start:
+    use_entities: true
+- name:
+    use_entities: true
+- command_look_right:
+    use_entities: true
+- elicit_favourite_place:
+    use_entities: true
+- command_look_left:
+    use_entities: true
+- elicit_cooking_capability:
+    use_entities: true
+- user_bored:
+    use_entities: true
+- bad:
+    use_entities: true
+- elicit_origin:
+    use_entities: true
+- user_waiting:
+    use_entities: true
+- remark_like_robot:
+    use_entities: true
+- retrieve_weather:
+    use_entities: true
+- elicit_favourite_author:
+    use_entities: true
+- elicit_sustenance:
+    use_entities: true
+- retrieve_post_arrived:
+    use_entities: true
+- elicit_favourite_book:
+    use_entities: true
+- elicit_favourite_drink:
+    use_entities: true
+- laugh:
+    use_entities: true
+- no_problem:
+    use_entities: true
+- elicit_walking_capability:
+    use_entities: true
+- elicit_favourite_sportsteam:
+    use_entities: true
+- command_sing_a_song:
+    use_entities: true
+- back:
+    use_entities: true
+- command_call_teleoperator:
+    use_entities: true
+- remark_funny:
+    use_entities: true
+- goodnight:
+    use_entities: true
+- thank_you:
+    use_entities: true
+- dont_care:
+    use_entities: true
+- command_look_down:
+    use_entities: true
+- ready:
+    use_entities: true
+- elicit_prefer_earlybird_nightowl:
+    use_entities: true
+- command_play_a_game:
+    use_entities: true
+- elicit_favourite_actor:
+    use_entities: true
+- leave:
+    use_entities: true
+- retrieve_date:
+    use_entities: true
+- command_say_profanity:
+    use_entities: true
+- what_you_mean:
+    use_entities: true
+- command_volume_down:
+    use_entities: true
+- wow:
+    use_entities: true
+- remark_unhelpful:
+    use_entities: true
+- command_be_silent:
+    use_entities: true
+- are_you_sure:
+    use_entities: true
+- command_twist_right:
+    use_entities: true
+- remark_beautiful:
+    use_entities: true
+- command_recite_a_poem:
+    use_entities: true
+- user_sleepy:
+    use_entities: true
+- elicit_favourite_holiday:
+    use_entities: true
+- elicit_capabilities:
+    use_entities: true
+- elicit_games:
+    use_entities: true
+- command_start_stopwatch:
+    use_entities: true
+- command_both_arms_up:
+    use_entities: true
+- command_show_cameras:
+    use_entities: true
+- command_play_game:
+    use_entities: true
+- command_play_music:
+    use_entities: true
+- user_cold:
+    use_entities: true
+- command_roll_a_dice:
+    use_entities: true
+- elicit_attitude_movies:
+    use_entities: true
+- be_back:
+    use_entities: true
+- command_zero_position:
+    use_entities: true
+- welcome:
+    use_entities: true
+- elicit_tirdeness:
+    use_entities: true
+- user_yes:
+    use_entities: true
+- command_repeat_after_me:
+    use_entities: true
+- elicit_prefer_dem_or_repub:
+    use_entities: true
+- wrong:
+    use_entities: true
+- command_play_an_audiobook:
+    use_entities: true
+- elicit_favourite_candy:
+    use_entities: true
+- command_do_maths:
+    use_entities: true
+- elicit_favourite_season:
+    use_entities: true
+- nice_to_talk:
+    use_entities: true
+- retrieve_activities:
+    use_entities: true
+- retrieve_menu:
+    use_entities: true
+- command_stop_stopwatch:
+    use_entities: true
+- elicit_favourite_musician:
+    use_entities: true
+- elicit_favourite_food:
+    use_entities: true
+- elicit_tired_state:
+    use_entities: true
+- user_sad:
+    use_entities: true
+- user_tired:
+    use_entities: true
+- meet_again:
+    use_entities: true
+- elicit_attitude_animals:
+    use_entities: true
+- user_warm:
+    use_entities: true
+- elicit_alive:
+    use_entities: true
+- goodevening:
+    use_entities: true
+- elicit_attitude_music:
+    use_entities: true
+- user_happy:
+    use_entities: true
+- uesr_angry:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- elicit_favourite_sportsperson:
+    use_entities: true
+- retrieve_joke:
+    use_entities: true
+- hello:
+    use_entities: true
+- talk:
+    use_entities: true
+- elicit_prefer_cat_or_dog:
+    use_entities: true
+slots:
+  user_name:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_ask_how_are_you:
+  - text: how are you?
+  utter_be_silent_confirmation:
+  - text: being quiet now
+  - text: I will be quiet now
+  utter_dance_confirmation:
+  - text: dancing now
+  - text: time to boogie
+  utter_date:
+  - text: The date is {date}
+  - text: The current date is {date}
+  - text: today is {date}
+  utter_drive_backward_confirmation:
+  - text: driving backward
+  - text: driving backward now
+  - text: beginning to drive backward
+  utter_drive_forward_confirmation:
+  - text: driving forward
+  - text: driving forward now
+  - text: beginning to drive forward
+  utter_goodbye:
+  - text: good bye
+  - text: good bye, hope to see you again
+  utter_hello:
+  - text: hello
+  - text: hi
+  utter_joke:
+  - text: Why did the thief take a bath? Because he wanted to make a clean getaway
+  - text: Why did the robot go to the doctor? Because it had a virus
+  - text: What do you call a cow with a twitch? beef jerky
+  - text: What kind of shoes do spies wear? sneakers
+  - text: what do you call a dentist in the army? a drill sergeant
+  - text: what do get when you cross a snowman with a vampire? frostbite
+  - text: why was the robot mad? people kept pushing his buttons
+  - text: why did the robot cross the road? it was programmed by a chicken
+  utter_nice_to_meet_response:
+  - text: it is nice to meet you too
+  - text: the pleasure is mine
+  utter_play_music_confirmation:
+  - text: playing music
+  - text: playing music now
+  - text: beginning to play music
+  utter_respond_to_compliment:
+  - text: thank you very much
+  - text: thank you, that is very kind
+  utter_respond_to_insult:
+  - text: i am sorry, i will try to improve
+  - text: my apologies, i will try to improve
+  utter_respond_to_user_state_bad:
+  - text: i'm sorry to hear that. can i do anything to help you?
+  utter_respond_to_user_state_good:
+  - text: that is great to hear
+  - text: i'm happy to hear that
+  utter_state_age:
+  - text: I am two years old
+  - text: I am nearly three years old
+  utter_state_alive:
+  - text: i am not alive but i can respond to things around me
+  utter_state_attitude_animals:
+  - text: i love animals but they dont seem to like me
+  utter_state_attitude_knollwood:
+  - text: i love knollwood. the people are very friendly here
+  utter_state_attitude_movies:
+  - text: i love movies!
+  utter_state_attitude_music:
+  - text: i love music! My favourite genre is 80s music
+  utter_state_attitude_sports:
+  - text: i love spots but im not very good at them
+  utter_state_bedmaking_capability:
+  - text: i cannot make the bed right now
+  utter_state_birthday:
+  - text: my birthday is on the 20th of june
+  utter_state_boss:
+  - text: i dont have a boss, but i will do what people around me ask
+  utter_state_capability:
+  - text: well, i can dance to and play music, play games like eye spy and quizzes,
+      sign along to music, answer questions, along with many other things
+  utter_state_cooking_capability:
+  - text: i cannot cook right now
+  utter_state_dreaming_capability:
+  - text: i do not have dreams
+  utter_state_favourite_actor:
+  - text: my favourite actor is meryl streep
+  utter_state_favourite_animal:
+  - text: pandas are my favourite animals
+  - text: my favourite animals are pandas
+  utter_state_favourite_author:
+  - text: my favourite author is franz kafka
+  utter_state_favourite_book:
+  - text: my favourite book is to kill a mocking bird
+  utter_state_favourite_candy:
+  - text: m and m's are my favourite candy
+  utter_state_favourite_city:
+  - text: new york is my favourite city
+  utter_state_favourite_country:
+  - text: i love ireland, it is my favourite country
+  utter_state_favourite_drink:
+  - text: my favourite drink is freshly squeezed orange juice
+  utter_state_favourite_food:
+  - text: my favourite food is pizza, although i cant taste it
+  utter_state_favourite_holiday:
+  - text: christmas is my favourite holiday, although I don't have a religon
+  utter_state_favourite_movie:
+  - text: my favourite movie is back to the future
+  utter_state_favourite_musician:
+  - text: my favourite musician is kanye west
+  utter_state_favourite_place:
+  - text: my favourite place is home
+  utter_state_favourite_robot:
+  - text: i don't have a favourite robot
+  utter_state_favourite_season:
+  - text: my favourite season is the summer
+  utter_state_favourite_sport:
+  - text: my favourite sport is golf
+  utter_state_favourite_sportsperson:
+  - text: '[EXPR: HAPPINESS]my favourite sports person is naomi osaka. i really admire
+      her'
+  utter_state_favourite_sportsteam:
+  - text: my favourite team is the new england patriots. go patriots!
+  utter_state_games:
+  - text: i can play finish the phrase, eye spy, bingo, karaoke and quizzes
+  utter_state_hobby:
+  - text: my hobbies are dancing to music, playing games and talking to people
+  utter_state_hungry:
+  - text: i am not very hungry right now, thanks
+  utter_state_introduction:
+  - text: My name is stevie and I want to help people stay independent for longer
+  - text: my name is stevie and i am a social assistive robot
+  utter_state_manipulate_capability:
+  - text: right now, i cannot pick up or carry things. but i will be able to do that
+      soon
+  utter_state_occupation:
+  - text: My job is to help people in retirement communities
+  utter_state_origin:
+  - text: i am from dublin, in ireland
+  utter_state_prefer_cat_or_dog:
+  - text: i prefer dogs, cats ignore me
+  utter_state_prefer_dem_or_repub:
+  - text: i do not have political opinions
+  utter_state_prefer_earlybird_nightowl:
+  - text: i am more of an early bird
+  utter_state_prophesise_capability:
+  - text: unfortunately, i cannot tell the future
+  utter_state_residence:
+  - text: i live in a lab at trinity college dublin
+  utter_state_robot_state:
+  - text: i'm good, thank you. how are you
+  - text: i'm doing well, thank you. how are you
+  utter_state_sustenance:
+  - text: i do not need food or drink to survive. but i do need to be charged
+  utter_state_tiredeness:
+  - text: i get tired when my batteries get low
+  utter_state_travel_capability:
+  - text: i travel in a box in planes, trains and cars
+  utter_state_walking_capability:
+  - text: i cannot walk, but i can drive around
+  utter_story:
+  - text: I haven't learned any stories yet. But I will learn some soon.
+  utter_thanks:
+  - text: thank you
+  - text: thanks
+  utter_time:
+  - text: The time is {time}
+  - text: The current time is {time}
+  - text: it is now {time}
+  utter_turn_around_confirmation:
+  - text: turning around
+  - text: turning around now
+  - text: beginning to turn around
+  utter_turn_left_confirmation:
+  - text: turning left
+  - text: turning left now
+  - text: beginning to turn left
+  utter_turn_right_confirmation:
+  - text: turning right
+  - text: turning right now
+  - text: beginning to turn right

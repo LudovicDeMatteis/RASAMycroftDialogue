@@ -1,0 +1,10 @@
+<launch>
+
+  <!--<param name="res_path" type="str" value="$(find speech_perception)/res"/>-->
+  <param name="speech_res_path" type="str" value="$(find speech_perception)/res"/>
+
+
+  <node name="wake_word_detection_node" pkg="speech_perception" type="wake_word_detection_node.py" respawn="false" output="screen"/>
+  <node name="speech_perception" pkg="speech_perception" type="speech_perception_node.py" respawn="false" output="screen"/>
+
+</launch>

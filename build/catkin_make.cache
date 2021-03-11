@@ -1,0 +1,2 @@
+dialogue_system:speech_perception
+-DCATKIN_DEVEL_PREFIX=/home/ludovic/Desktop/dialogue_system/devel -DCMAKE_INSTALL_PREFIX=/home/ludovic/Desktop/dialogue_system/install -G Unix Makefiles
